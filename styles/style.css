@@ -1,0 +1,178 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       
+}
+
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2017/08/15/08/23/stars-2643089_1280.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+  
+  header div img {
+    width: 150px;
+    background-color: none;
+    border-radius: 50%;
+  }
+ 
+.img2 img{
+  width: 300px;
+
+}
+  nav ul li a {
+    text-decoration: none;
+  }
+  
+  /* Display flex */
+  
+  header {
+    background-color: rgba(0, 0, 255, 0.315);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(0, 0, 255, 0.315);
+    border-radius: 10px;
+  }
+  
+  nav ul li a {
+    color: rgb(248, 232, 10);
+  }
+  
+  /* Comienzo estilos main */
+
+main {
+
+  padding:20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h2{
+  padding: 20px;
+  display:block;
+  text-align: center;
+}
+  .sinopsis {
+  
+  display: flex;
+
+}
+
+.sinopsis div img {
+  width: 500px;
+  border-radius: 10px;
+ 
+}
+
+.derecha {
+  background-color: rgba(0, 0, 255, 0.315);
+  padding: 20px;
+  color: rgb(248, 232, 10);
+  border-radius: 10px;
+  margin: 10px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+  
+
+/*-- Estilos contenedor de tarjetas de personajes --*/
+  
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .grid-item {
+    width: 200px;
+    background-color: rgba(0, 0, 255, 0.315);
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin:10px;
+    color: rgb(248, 232, 10);
+  }
+  
+  .grid-item img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  /* Comienzo estilos Footer */
+  
+  footer {
+    background-color:rgba(0, 0, 255, 0.315);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:rgb(248, 232, 10);
+    
+  }
+  
+  footer div nav ul {
+    list-style: none;
+  }
+  
+  footer div nav ul li {
+    padding: 10px;
+    margin: 5px;
+    background-color: rgba(0, 0, 255, 0.315);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:rgb(248, 232, 10);  
+
+  }
+
+  /*
+  /*Media querie | punto de quiebre*/
+
+@media (max-width:880px) {
+  
+  .sinopsis {
+    flex-direction: column;
+}
+
+@media(max-width: 480px) {
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sinopsis div img {
+   
+    display: none;
+  }
+  
+
+  header ul {
+    flex-direction: column;
+  }
+
+
+
+  }
+  footer {
+    background-color: rgba(0, 0, 255, 0.315);
+  }
+}
