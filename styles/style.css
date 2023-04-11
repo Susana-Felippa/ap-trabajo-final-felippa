@@ -67,6 +67,8 @@ h2{
   padding: 20px;
   display:block;
   text-align: center;
+  color:rgb(248, 232, 10);
+
 }
   .sinopsis {
   
@@ -115,6 +117,32 @@ h2{
     width: 100%;
     border-radius: 50%;
   }
+  
+ /* Sección Ver el show */
+ .ver-show{
+  text-align: center;
+ }
+ 
+  /* Sección Biografía */
+  .biografia, .ver-show {
+    background-color:rgba(0, 0, 255, 0.315);
+    border-radius: 20px;
+    padding: 20px;
+    color:rgb(248, 232, 10);
+  }
+.ver-show{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.ver-show img {
+  width: 100px;
+  border-radius: 20px;}
+
+.ver-show .derecha{
+  justify-content: center;
+}
+
 
   /* Comienzo estilos Footer */
   
