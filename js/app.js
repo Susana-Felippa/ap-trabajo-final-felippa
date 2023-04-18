@@ -13,15 +13,40 @@ fetch("https://rickandmortyapi.com/api/character")
     console.log(personajes[0]);
 
     for (let i = 0; i < personajes.length; i++) {
+    
+        console.log(personajes[i].status);
+        if (personajes[i].gender == "Male") {
+          personajes[i].gender = "Masculino";
+        } else {
+          personajes[i].gender = "Femenino";
+        };
+        if (personajes[i].species == "Human") {
+          personajes[i].species = "Humano";
+        } else {
+          personajes[i].species = "Extraterrestre";
+        };
+        if (personajes[i].status == "Alive") {
+          personajes[i].status = "Vivo";
+        } else if (personajes[i].status == "Dead") {
+          personajes[i].status = "Finado";
+        } else {
+          personajes[i].status = "Desconocido";
+        }
+        
+  
       $contenedor.innerHTML += `
       <div class="tarjeta">
         <img src="${personajes[i].image}">
-        <p class="nombre-personaje">${personajes[i].name}</p>
-        <p>${personajes[i].gender}</p>
-        <p>${personajes[i].species}</p>
-        <p>${personajes[i].status}</p>
-        <p>${personajes[i].location.name}</p>
-        <p>${personajes[i].origin.name}</p>
+        <span class="titulo-item">Nombre: </span>
+        <span class="dato-item">${personajes[i].name}</span><br>
+        <span class="titulo-item">Género: </span>
+        <span class="dato-item">${personajes[i].gender}</span><br>
+        <span class="titulo-item">Especie:  </span>
+        <span class="dato-item">${personajes[i].species}</span><br>
+        <span class="titulo-item">Estado: </span>
+        <span class="dato-item">${personajes[i].status}</span><br>
+        
+        <br>
       </div>
       `;
     }

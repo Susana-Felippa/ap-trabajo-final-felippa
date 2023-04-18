@@ -104,7 +104,7 @@ h2{
   }
   
   .tarjeta {
-    width: 200px;
+    width: 240px;
     background-color: rgba(0, 0, 255, 0.315);
     padding: 20px;
     text-align: center;
@@ -118,6 +118,16 @@ h2{
     border-radius: 50%;
   }
  
+  .titulo-item{
+    color: rgb(248, 232, 10);
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+  }
+  .dato-item{
+    color: white;
+    
+  }
  /* Sección Ver el show */
  .ver-show{
   text-align: center;
