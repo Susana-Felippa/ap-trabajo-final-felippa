@@ -95,7 +95,7 @@ h2{
   
 
 /*-- Estilos contenedor de tarjetas de personajes --*/
-  
+
 .contenedor {
     width: 100%;
     display: flex;
@@ -103,7 +103,7 @@ h2{
     flex-wrap: wrap;
   }
   
-  .grid-item {
+  .tarjeta {
     width: 200px;
     background-color: rgba(0, 0, 255, 0.315);
     padding: 20px;
@@ -113,11 +113,11 @@ h2{
     color: rgb(248, 232, 10);
   }
   
-  .grid-item img {
+  .tarjeta img {
     width: 100%;
     border-radius: 50%;
   }
-  
+ 
  /* Sección Ver el show */
  .ver-show{
   text-align: center;
@@ -182,6 +182,7 @@ h2{
 
 @media(max-width: 480px) {
 
+  
   header {
     flex-direction: column;
     gap: 10px;
