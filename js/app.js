@@ -13,8 +13,7 @@ fetch("https://rickandmortyapi.com/api/character")
     console.log(personajes[0]);
 
     for (let i = 0; i < personajes.length; i++) {
-    
-        console.log(personajes[i].status);
+    // Comienza evaluación del contenido para traducir //
         if (personajes[i].gender == "Male") {
           personajes[i].gender = "Masculino";
         } else {
