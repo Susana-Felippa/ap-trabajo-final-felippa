@@ -205,6 +205,10 @@ h2{
   align-items: center;
 }
 
+.biografia div img {
+  display: none;
+}
+
 @media(max-width: 480px) {
   
   header {
